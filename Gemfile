@@ -1,9 +1,12 @@
 source 'https://rubygems.org'
 
+gem 'bitters'
+gem 'bourbon'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
+gem 'neat'
 gem 'pwdcalc'
 gem 'rails', '4.1.4'
 gem 'sass-rails', '~> 4.0.3'
