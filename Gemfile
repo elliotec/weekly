@@ -16,3 +16,8 @@ gem 'spring', group: :development
 gem 'sqlite3'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+gem 'awesome_print', group: :development, group: :test
+gem 'better_errors', group: :development
+gem 'binding_of_caller', group: :development
+gem 'pry-rails', group: :development, group: :test
+gem 'quiet_assets', group: :development
