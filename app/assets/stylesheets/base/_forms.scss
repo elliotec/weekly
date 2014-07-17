@@ -5,6 +5,11 @@ fieldset {
   padding: $base-line-height;
 }
 
+h2 {
+  margin: 1em;
+  text-align: center;
+}
+
 input,
 label,
 select {
@@ -75,4 +80,9 @@ select {
   width: auto;
   max-width: 100%;
   margin-bottom: $base-line-height;
+}
+
+.deviseform {
+  @include span-columns(4);
+    @include shift(4);
 }

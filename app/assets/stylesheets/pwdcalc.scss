@@ -1,0 +1,101 @@
+$pwdcalc_score_background_color: #FFF;
+$pwdcalc_tooweak_text_color: #CC3333;
+$pwdcalc_weak_text_color: #CC3333;
+$pwdcalc_fair_text_color: #F89406;
+$pwdcalc_good_text_color: #9ACD32;
+$pwdcalc_verygood_text_color: #339900;
+$pwdcalc_ditionary_word_text_color: #CC3333;
+
+.pwdcalc {
+  position: relative;
+}
+
+.password-strength-meter {
+  display:none;
+
+  &.active {
+    display: block;
+
+    border-radius: 3em;
+  }
+}
+
+input.required {
+  opacity: .5;
+}
+
+.pwdcalc-score {
+  $step_width: 5.62em;
+  z-index: -1;
+  display: none;
+  margin-left: 1.4px;
+  position: relative;
+  bottom: 2.92em;
+  height: 2.1em;
+  width: $step_width * 5;
+  margin-bottom: -2.9em;
+
+  span, b {
+    display: block;
+    height: inherit;
+  }
+
+  span {
+    background-color: $pwdcalc_score_background_color;
+    width: inherit;
+
+    b {
+      width: 1px;
+      background-color: $pwdcalc_verygood_text_color;
+      content: "";
+    }
+  }
+
+  &[data-strength="dictionary-word"] b {
+    width: $step_width * 5;
+    background-color: darken($pwdcalc_ditionary_word_text_color, 5);
+  }
+
+  &[data-strength="weak"] b {
+    width: $step_width;
+    background-color: darken($pwdcalc_tooweak_text_color, 5);
+  }
+
+  &[data-strength="fair"] b {
+    width: $step_width * 2;
+    background-color: darken($pwdcalc_weak_text_color, 5);
+  }
+
+  &[data-strength="good"] b {
+    width: $step_width * 3;
+    background-color: darken($pwdcalc_fair_text_color, 5);
+  }
+
+  &[data-strength="strong"] b {
+    width: $step_width * 4;
+    background-color: darken($pwdcalc_good_text_color, 5)
+  }
+
+  &[data-strength="very-strong"] b {
+    width: $step_width * 5;
+  }
+}
+
+.pwdcalc[data-complexity="weak"] {
+  color: $pwdcalc_tooweak_text_color;
+}
+.pwdcalc[data-complexity="fair"] {
+  color: $pwdcalc_weak_text_color;
+}
+.pwdcalc[data-complexity="good"] {
+  color: $pwdcalc_fair_text_color;
+}
+.pwdcalc[data-complexity="strong"] {
+  color: $pwdcalc_good_text_color;
+}
+.pwdcalc[data-complexity="very-strong"] {
+  color: $pwdcalc_verygood_text_color;
+}
+.pwdcalc[data-complexity="dictionary-word"] {
+  color: $pwdcalc_ditionary_word_text_color;
+}
