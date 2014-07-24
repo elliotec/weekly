@@ -14,7 +14,7 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form'
 gem 'spring', group: :development
-gem 'sqlite3'
+gem 'sqlite3', group: :development
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'awesome_print', group: :development, group: :test
