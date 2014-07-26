@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'angularjs-rails'
 gem 'bitters'
 gem 'bourbon', '~> 3.2.1'
 gem 'coffee-rails', '~> 4.0.0'
