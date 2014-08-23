@@ -11,9 +11,10 @@
 // about supported directives.
 //
 //= require jquery
-//= require angular
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.YAPSM.min
 //= require jquery.pwdcalc
+//= require angular
+//= require angular-rails-templates
+//= require main
 //= require_tree .

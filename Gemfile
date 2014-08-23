@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'angularjs-rails'
+gem 'bower-rails'
+gem 'angular-rails-templates'
 gem 'bitters'
 gem 'bourbon', '~> 3.2.1'
 gem 'coffee-rails', '~> 4.0.0'
@@ -23,3 +24,4 @@ gem 'better_errors', group: :development
 gem 'binding_of_caller', group: :development
 gem 'pry-rails', group: :development, group: :test
 gem 'quiet_assets', group: :development
+gem 'newrelic_rpm'
